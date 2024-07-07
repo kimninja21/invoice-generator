@@ -10,7 +10,7 @@ import { useGetValue } from "@/app/hooks/useGetValue";
 import { getInitialValue } from "@/lib/getInitialValue";
 
 export const UserInputForm = () => {
-  const step = useGetValue("step", getInitialValue("step", "1"));
+  const step = useGetValue("step", getInitialValue("step", "3"));
 
   return (
     <div>

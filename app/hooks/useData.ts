@@ -1,43 +1,43 @@
 import { useGetValue, useItemParams } from "@/app/hooks/useGetValue";
 
 export const useData = () => {
-  const yourEmail = useGetValue("yourEmail");
-  const yourName = useGetValue("yourName");
-  const yourAddress = useGetValue("yourAddress");
-  const yourCity = useGetValue("yourCity");
+  const yourEmail = useGetValue("yourEmail") || "hello@iamkimninja.com";
+  const yourName = useGetValue("yourName") || "Kim Ninja";
+  const yourAddress = useGetValue("yourAddress") || "502, 126, Jandari-ro, Mapo-Gu";
+  const yourCity = useGetValue("yourCity") || "Seoul";
   const yourState = useGetValue("yourState");
-  const yourCountry = useGetValue("yourCountry");
-  const yourLogo = useGetValue("yourLogo");
+  const yourCountry = useGetValue("yourCountry") || "South Korea";
+  const yourLogo = useGetValue("yourLogo") || "/logo_kimninja.png";
   const yourTaxId = useGetValue("yourTaxId");
-  const yourZip = useGetValue("yourZip");
+  const yourZip = useGetValue("yourZip") || "03998";
 
-  const email = useGetValue("email");
-  const companyName = useGetValue("companyName");
-  const companyAddress = useGetValue("companyAddress");
-  const companyCity = useGetValue("companyCity");
-  const companyState = useGetValue("companyState");
-  const companyCountry = useGetValue("companyCountry");
-  const companyLogo = useGetValue("companyLogo");
-  const companyTaxId = useGetValue("companyTaxId");
-  const companyZip = useGetValue("companyZip");
+  const email = useGetValue("email") || "invoice@lumoview.com";
+  const companyName = useGetValue("companyName") || "Lumoview Building Analytics GmbH";
+  const companyAddress = useGetValue("companyAddress") || "Eichendorffstr. 49";
+  const companyCity = useGetValue("companyCity") || "Köln";
+  const companyState = useGetValue("companyState") ;
+  const companyCountry = useGetValue("companyCountry") || "Germany" ;
+  const companyLogo = useGetValue("companyLogo") || "/logo_lumoview.png";
+  const companyTaxId = useGetValue("companyTaxId") ;
+  const companyZip = useGetValue("companyZip") || "50825";
 
   const note = useGetValue("note");
   const discount = useGetValue("discount");
   const taxRate = useGetValue("tax");
   const items = useItemParams();
 
-  const bankName = useGetValue("bankName");
-  const accountNumber = useGetValue("accountNumber");
-  const accountName = useGetValue("accountName");
+  const bankName = useGetValue("bankName") || "Wise";
+  const accountNumber = useGetValue("accountNumber") || "BE04967847815631";
+  const accountName = useGetValue("accountName") || "Kim Ninja";
   const routingCode = useGetValue("routingCode");
-  const swiftCode = useGetValue("swiftCode");
+  const swiftCode = useGetValue("swiftCode") || "TRWIBEB1XXX";
   const ifscCode = useGetValue("ifscCode");
 
-  const invoiceNumber = useGetValue("invoiceNo");
+  const invoiceNumber = useGetValue("invoiceNo") || "2024000";
   const issueDate = useGetValue("issueDate");
   const dueDate = useGetValue("dueDate");
 
-  const currency = useGetValue("currency") || "INR";
+  const currency = useGetValue("currency", "EUR");
 
   const invoiceTerms = {
     invoiceNumber,
@@ -54,12 +54,12 @@ export const useData = () => {
   };
 
   const paymentDetails = {
-    bankName: bankName,
-    accountNumber: accountNumber,
-    accountName: accountName,
-    routingCode: routingCode,
-    swiftCode: swiftCode,
-    ifscCode: ifscCode,
+    bankName,
+    accountNumber,
+    accountName,
+    routingCode,
+    swiftCode,
+    ifscCode,
     currency
   };
 

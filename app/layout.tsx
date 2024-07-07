@@ -77,15 +77,15 @@ export default function RootLayout({
         <meta name="theme-color" content="#f97316" />
         <script
           defer
-          data-domain="invoice-generator.prolab.sh"
-          src="https://plausible.prolab.sh/js/script.js"
+          data-domain="invoice-generator.huykimnguyen.com"
+          src="https://plausible.huykimnguyen.com/js/script.js"
         ></script>
         <script
           defer
-          data-domain="invoice-generator.prolab.sh"
-          src="https://plausible.prolab.sh/js/script.tagged-events.js"
+          data-domain="invoice-generator.huykimnguyen.com"
+          src="https://plausible.huykimnguyen.com/js/script.tagged-events.js"
         ></script>
-        <Script src="/chatwoot.js" />
+
       </head>
       <body className={`${GeistSans.className}`}>{children}</body>
     </html>

@@ -9,8 +9,14 @@ import { useGetValue } from "@/app/hooks/useGetValue";
 import { Controller } from "react-hook-form";
 import { getItemValue } from "@/lib/getInitialValue";
 
+const defaultItems = [
+  { itemDescription: "Lumoview API Documentation", amount: 500, qty: 1 },
+  { itemDescription: "Lumoview Microservice Architecture", amount: 2000, qty: 1 },
+  { itemDescription: "Lumoview Onboarding New Developers", amount: 4000, qty: 1 },
+];
+
 export const InvoiceDetailsForm = () => {
-  const value = useGetValue("currency", "INR");
+  const value = useGetValue("currency", "EUR");
   const currencyDetails = currencyList.find(
     (currency) => currency.value.toLowerCase() === value.toLowerCase()
   )?.details;

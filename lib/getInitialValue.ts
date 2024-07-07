@@ -20,7 +20,6 @@ export const getItemValue = (): Item[] => {
     ];
   }
 };
-
 const getItems = (items?: string | null): Item[] => {
   if (!items)
     return [

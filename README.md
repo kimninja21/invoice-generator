@@ -44,7 +44,7 @@ Create `.env.local` file similar to `.env.example`.
 
 The Invoice generator is deployed using [Coolify](https://coolify.io) self hosted. Automatic deployments are triggered when changes are pushed to the main branch.
 
-[Live Invoice Generator Link](https://invoice-generator.prolab.sh/)
+[Live Invoice Generator Link](https://invoice-generator.huykimnguyen.com/)
 
 ### License
 
