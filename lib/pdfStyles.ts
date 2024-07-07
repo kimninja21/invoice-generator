@@ -19,6 +19,10 @@ export const pdfTypography = StyleSheet.create({
         fontSize: 12,
         fontWeight: "medium",
     },
+    textsm: {
+        fontSize: 12,
+        fontWeight: 'medium'
+    },
     text2xl: {
         fontSize: 24,
         fontWeight: 'medium'

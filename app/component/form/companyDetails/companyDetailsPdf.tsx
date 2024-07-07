@@ -23,7 +23,7 @@ export const CompanyDetailsPdf: React.FC<CompanyDetails> = ({
       )}
     </View>
     {companyName && (
-      <Text style={{ ...pdfTypography.text2xl, flexWrap: "wrap" }}>
+      <Text style={{ ...pdfTypography.textsm, flexWrap: "wrap" }}>
         {companyName}
       </Text>
     )}

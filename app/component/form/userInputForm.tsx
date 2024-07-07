@@ -15,19 +15,25 @@ export const UserInputForm = () => {
   return (
     <div>
       <div className={step === "1" ? "block" : "hidden"}>
-        <YourDetailsForm />
+        <InvoiceTermsForm />
+        <InvoiceDetailsForm />
+        <DownloadInvoiceButton />
       </div>
       <div className={step === "2" ? "block" : "hidden"}>
-        <CompanyDetailsForm />
+        <YourDetailsForm />
+        <DownloadInvoiceButton />
       </div>
       <div className={step === "3" ? "block" : "hidden"}>
-        <InvoiceDetailsForm />
+        <CompanyDetailsForm />
+        <DownloadInvoiceButton />
       </div>
       <div className={step === "4" ? "block" : "hidden"}>
         <PaymentDetailsForm />
+        <DownloadInvoiceButton />
       </div>
       <div className={step === "5" ? "block" : "hidden"}>
         <InvoiceTermsForm />
+        <DownloadInvoiceButton />
       </div>
       {step === "6" && <DownloadInvoiceButton />}
     </div>

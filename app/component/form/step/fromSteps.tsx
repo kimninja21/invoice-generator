@@ -33,14 +33,14 @@ export const FormSteps = () => {
 const step1 = {
   previous: null,
   nextStep: {
-    title: "Company Details",
+    title: "Invoice details",
     step: "2",
   },
 };
 
 const step2 = {
   previous: {
-    title: "Your Details",
+    title: "Company",
     step: "1",
   },
   nextStep: {
@@ -50,7 +50,7 @@ const step2 = {
 };
 const step3 = {
   previous: {
-    title: "Your details",
+    title: "Your Details",
     step: "2",
   },
   nextStep: {

@@ -32,12 +32,7 @@ export const DownloadInvoiceButton = () => {
   }, [status]);
 
   return (
-    <div className="flex h-[calc(100vh-208px)] justify-center items-center">
       <div>
-        <h1 className="text-5xl font-semibold pb-6">Your invoice is ready</h1>
-        <p className="text-neutral-500 text-xl pb-7">
-          Please review the details carefully before downloading your invoice.
-        </p>
         <Button
           disabled={status === "downloading"}
           onClick={async () => {
@@ -107,7 +102,6 @@ export const DownloadInvoiceButton = () => {
           )}
         </Button>
       </div>
-    </div>
   );
 };
 
