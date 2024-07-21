@@ -36,7 +36,7 @@ export const CompanyDetailsPdf: React.FC<CompanyDetails> = ({
       {companyAddress && <Text>{companyAddress}</Text>}
       {(companyCity || companyState || companyZip) && (
         <Text style={{ marginBottom: 2 }}>
-          {companyCity}, {companyState} {companyZip}
+          {companyZip} {companyCity} {companyState} 
         </Text>
       )}
       {companyCountry && (

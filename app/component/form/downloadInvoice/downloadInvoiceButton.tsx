@@ -142,3 +142,40 @@ Font.register({
     },
   ],
 });
+Font.register({
+  family: "NotoSans",
+  fonts: [
+    {
+      src: "/font/NotoSans-Thin.ttf",
+      fontWeight: "thin",
+    },
+    {
+      src: "/font/NotoSans-Ultralight.ttf",
+      fontWeight: "ultralight",
+    },
+    {
+      src: "/font/NotoSans-Light.ttf",
+      fontWeight: "light",
+    },
+    {
+      src: "/font/NotoSans-Regular.ttf",
+      fontWeight: "normal",
+    },
+    {
+      src: "/font/NotoSans-Medium.ttf",
+      fontWeight: "medium",
+    },
+    {
+      src: "/font/NotoSans-SemiBold.ttf",
+      fontWeight: "semibold",
+    },
+    {
+      src: "/font/NotoSans-Bold.ttf",
+      fontWeight: "bold",
+    },
+    {
+      src: "/font/NotoSans-UltraBlack.ttf",
+      fontWeight: "ultrabold",
+    },
+  ],
+});

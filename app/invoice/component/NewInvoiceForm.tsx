@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { UserInputForm } from "@/app/component/form/userInputForm";
 import { FormSteps } from "@/app/component/form/step/fromSteps";
-import { UserDataPreview } from "@/app/(landing)/component/userDataPreview";
+import { UserDataPreview } from "@/app/invoice/component/userDataPreview";
 import { useForm, FormProvider } from "react-hook-form";
 import { useEffect, useState } from "react";
 

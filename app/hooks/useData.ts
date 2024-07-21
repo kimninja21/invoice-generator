@@ -2,7 +2,7 @@ import { useGetValue, useItemParams } from "@/app/hooks/useGetValue";
 
 export const useData = () => {
   const yourEmail = useGetValue("yourEmail") || "hello@iamkimninja.com";
-  const yourName = useGetValue("yourName") || "Kim Ninja";
+  const yourName = useGetValue("yourName") || "김닌자 주식회사 Kim Ninja";
   const yourAddress = useGetValue("yourAddress") || "502, 126, Jandari-ro, Mapo-Gu";
   const yourCity = useGetValue("yourCity") || "Seoul";
   const yourState = useGetValue("yourState");
